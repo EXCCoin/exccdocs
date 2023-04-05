@@ -1,0 +1,2 @@
+# exccdocs
+ExchangeCoin documentation.
