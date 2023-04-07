@@ -127,7 +127,7 @@ nav:
   - "Redeem Script": 'proof-of-stake/redeem-script.md'
 - 'Proof-of-Work Mining':
   - 'Overview': 'mining/overview.md'
-  - 'Mining with HiveOS': 'mining/hiveos.md'
+  - 'Mining with Hiveon': 'mining/hiveon.md'
   - 'Mining with lolMiner': 'mining/lolMiner.md'
 - Privacy:
   - 'General Privacy': 'privacy/general-privacy.md'
