@@ -10,7 +10,6 @@ WORKDIR /root
 
 COPY ./ /root/
 
-RUN pip install --upgrade pip
 RUN pip install mkdocs && \
 	pip install --user -r requirements.txt
 
