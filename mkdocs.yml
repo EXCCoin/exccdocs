@@ -1,0 +1,175 @@
+site_name: ExchangeCoin Documentation
+site_url: https://docs.excc.co
+use_directory_urls: true
+watch:
+  - "docs"
+  - "snippets"
+theme:
+  name: material
+  favicon: 'img/favicon.ico?v=s3ss'
+  logo: 'img/excclogo.svg'
+  font: false
+  features:
+    - navigation.instant
+  icon:
+    repo: octicons/mark-github-16
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: exccdocs-light
+      # Primary and accent colours should be fully overridden by exccdocs-light theme.
+      # If any green shows up in the site, thats a bug.
+      primary: green
+      accent: green
+      toggle:
+        icon: material/lightbulb-on
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: exccdocs-dark
+      # Primary and accent colours should be fully overridden by exccdocs-dark theme.
+      # If any green shows up in the site, thats a bug.
+      primary: green
+      accent: green
+      toggle:
+        icon: material/lightbulb-off
+        name: Switch to light mode
+extra:
+  exilibriumversion: 1.6.3
+  cliversion: 1.7.2
+  lndversion: 0.3.0
+  social:
+    - icon: octicons/mark-github-16
+      link: https://github.com/EXCCoin
+      name: GitHub
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/excc_team
+      name: Twitter
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@exchangecoin
+      name: Medium
+    - icon: fontawesome/brands/reddit
+      link: https://www.reddit.com/r/EXCC
+      name: Reddit
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/exchangecoinofficial/
+      name: Facebook
+repo_url: https://github.com/EXCCoin/exccdocs
+repo_name: EXCCoin/exccdocs
+markdown_extensions:
+  - footnotes
+  - smarty
+  - admonition
+  - toc
+  - tables
+  - attr_list
+  - pymdownx.snippets:
+      check_paths: true
+      base_path: 'snippets'
+  - pymdownx.details
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences
+extra_css:
+  - css/fonts.css
+  - css/style.css
+plugins:
+  - markdownextradata
+  - search
+  - social:
+      cards: !ENV [EXCCDOCS_CARDS, false]
+      cards_font: 'Source Sans Pro'
+      cards_color:
+        fill: '#091440'
+        text: '#FFFFFF'
+nav:
+- 'Introduction to ExchangeCoin': 'index.md'
+- Getting Started:
+  - "Beginner's Guide": 'getting-started/beginner-guide.md'
+  - 'Obtaining EXCC': 'getting-started/obtaining-excc.md'
+  - 'Using the Block Explorer': 'getting-started/using-the-block-explorer.md'
+  - 'Business Brief': 'getting-started/business-brief.md'
+- Governance:
+  - 'Governance Overview': 'governance/overview.md'
+  - Consensus Rule Voting:
+    - 'Consensus Rule Voting Overview': 'governance/consensus-rule-voting/overview.md'
+    - 'How to Vote': 'governance/consensus-rule-voting/how-to-vote.md'
+    - 'Verifying Votes': 'governance/consensus-rule-voting/verifying-votes.md'
+    - 'Consensus Vote Archive': 'governance/consensus-rule-voting/consensus-vote-archive.md'
+  - 'ExchangeCoin Constitution': 'governance/exchangecoin-constitution.md'
+- Wallets:
+    - Exilibrium (GUI):
+      - 'Exilibrium Setup': 'wallets/exilibrium/exilibrium-setup.md'
+      - 'Using Exilibrium': 'wallets/exilibrium/using-exilibrium.md'
+      - 'Upgrading Exilibrium': 'wallets/exilibrium/upgrading-exilibrium.md'
+      - 'Migrations': 'wallets/exilibrium/migrations.md'
+      - 'Troubleshooting Problems': 'wallets/exilibrium/exilibrium-troubleshooting.md'
+    - CLI Wallet:
+      - 'CLI Installation': 'wallets/cli/cli-installation.md'
+      - 'OS Differences': 'wallets/cli/os-differences.md'
+      - 'Startup Basics': 'wallets/cli/startup-basics.md'
+      - 'exccd Setup': 'wallets/cli/exccd-setup.md'
+      - 'exccwallet Setup': 'wallets/cli/exccwallet-setup.md'
+      - 'exccctl Basics': 'wallets/cli/exccctl-basics.md'
+      - 'Buying Tickets': 'wallets/cli/exccwallet-tickets.md'
+      - 'exccd and exccwallet CLI Arguments': 'wallets/cli/exccd-and-exccwallet-cli-arguments.md'
+      - 'exccctl RPC Commands': 'wallets/cli/exccctl-rpc-commands.md'
+    - 'SPV': 'wallets/spv.md'
+- Proof-of-Stake Voting:
+  - "PoS Voting Overview": 'proof-of-stake/overview.md'
+  - "How to Stake": 'proof-of-stake/how-to-stake.md'
+  - "Redeem Script": 'proof-of-stake/redeem-script.md'
+- 'Proof-of-Work Mining':
+  - 'Overview': 'mining/overview.md'
+  - 'Mining with HiveOS': 'mining/hiveos.md'
+  - 'Mining with lolMiner': 'mining/lolMiner.md'
+- Privacy:
+  - 'General Privacy': 'privacy/general-privacy.md'
+  #- CoinShuffle++: TODO: enable when tested on excc's mainnet
+  #  - 'CoinShuffle++ Overview': 'privacy/cspp/overview.md'
+  #  - 'How to use CSPP': 'privacy/cspp/how-to-cspp.md'
+- FAQ:
+  - 'Configuration FAQs': 'faq/configuration.md'
+  - 'Wallets and Seed FAQs': 'faq/wallets-and-seeds.md'
+  - 'Block FAQs': 'faq/blocks.md'
+  - 'PoW FAQs': 'faq/proof-of-work-mining.md'
+  - 'Common Errors and Solutions': 'faq/errors.md'
+  - PoS:
+    - 'General PoS FAQs': 'faq/proof-of-stake/general.md'
+    - 'Solo Voting FAQs': 'faq/proof-of-stake/solo-voting.md'
+    - 'Buying Tickets and Fee FAQs': 'faq/proof-of-stake/buying-tickets-and-fees.md'
+    - 'Voting Service Provider FAQs': 'faq/proof-of-stake/voting-service-providers.md'
+- Advanced:
+  - 'Manual CLI Installation': 'advanced/manual-cli-install.md'
+  - 'Verifying Binaries': 'advanced/verifying-binaries.md'
+  - 'Premine': 'advanced/premine.md'
+  - 'Issuance': 'advanced/issuance.md'
+  - 'Deleting Your Wallet': 'advanced/deleting-your-wallet.md'
+  - 'Solo Proof-of-Stake (PoS) Voting': 'advanced/solo-proof-of-stake-voting.md'
+  - 'Operating a VSP': 'advanced/operating-a-vsp.md'
+  - 'Running a Full Node': 'advanced/full-node.md'
+  - 'Security': 'advanced/general-security.md'
+  - 'ExchangeCoin Seed and BIP-0039': 'advanced/mnemonic-seed.md'
+  - 'Secure Cold Wallet Setup': 'advanced/secure-cold-wallet-setup.md'
+- Research:
+  - 'Research Overview': 'research/overview.md'
+  - 'Hybrid Design': 'research/hybrid-design.md'
+  - 'Decentralized Stake Pooling': 'research/decentralized-stake-pooling.md'
+  - 'Elliptic Curve Signature Algorithms': 'research/elliptic-curve-signature-algorithms.md'
+  - 'Signature Script Isolation and Fraud Proofs': 'research/signature-script-isolation-and-fraud-proofs.md'
+  - 'Block Production Times': 'research/block-production-times.md'
+  - 'Schnorr Signatures': 'research/schnorr-signatures.md'
+  - 'Miscellaneous Improvements': 'research/miscellaneous-improvements.md'
+- Contributing:
+  - 'Contributing Overview': 'contributing/overview.md'
+  - 'Contributor Compensation': 'contributing/contributor-compensation.md'
+- 'Glossary': 'glossary.md'
+- About:
+    - 'License': 'about/license.md'
+copyright: If you wish to improve this site, please <a href="https://github.com/EXCCoin/exccdocs/issues/new">open an issue</a> or <a href="https://github.com/EXCCoin/exccdocs/compare">send a pull request</a>.<br />exccdocs v0.0.3. ExchangeCoin Team 2023.

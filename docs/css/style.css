@@ -1,0 +1,222 @@
+[data-md-color-scheme="exccdocs-light"] {
+    /* Header bg color */
+    --md-primary-fg-color:           #091440;
+    /* Mobile nav menu bg color */
+    --md-primary-fg-color--dark:     #122c5c;
+    /* Background */
+    --md-default-bg-color:           #fff;
+    /* h1 & table header bg */
+    --md-default-fg-color--light:    #596D81;
+    /* Edit icon (pencil) */
+    --md-default-fg-color--lighter:  #596D81;
+    /* <hr> */
+    --md-default-fg-color--lightest: rgba(0,0,0,0.1);
+    /* Main body text & h2, h3, etc. */
+    --md-typeset-color:              #48566E;
+    /* <a> */
+    --md-typeset-a-color:            #2970FF;
+    /* <a> :hover */
+    --md-accent-fg-color:            #1A59F7;
+    /* Footer */
+    --md-footer-fg-color:            #fff;
+    --md-footer-bg-color:            #091440;
+    /* Code */
+    --md-code-fg-color:              #48566E;
+    --md-code-bg-color:              #EDEFF1;
+    /* Code highlighting color shades */
+    --md-code-hl-color:                var(--md-code-fg-color);
+    --md-code-hl-number-color:         hsla(6, 74%, 63%, 1);
+    --md-code-hl-special-color:        hsla(340, 83%, 66%, 1);
+    --md-code-hl-function-color:       hsla(291, 57%, 65%, 1);
+    --md-code-hl-constant-color:       hsla(250, 62%, 70%, 1);
+    --md-code-hl-keyword-color:        hsla(219, 66%, 64%, 1);
+    --md-code-hl-string-color:         hsla(150, 58%, 44%, 1);
+    --md-code-hl-name-color:           var(--md-code-fg-color);
+    --md-code-hl-operator-color:       var(--md-default-fg-color--light);
+    --md-code-hl-punctuation-color:    var(--md-default-fg-color--light);
+    --md-code-hl-comment-color:        var(--md-default-fg-color--light);
+    --md-code-hl-generic-color:        var(--md-default-fg-color--light);
+    --md-code-hl-variable-color:       var(--md-default-fg-color--light);
+    /* Admonitions */
+    --md-admonition-fg-color:        #48566E;
+    --md-admonition-bg-color:        #fff;
+    /* Custom colors for headings */
+    --exccdocs-h1-color:              #596D81;
+    --exccdocs-h2-color:              #091440;
+    --exccdocs-h3-color:              #091440;
+    --exccdocs-h4-color:              #091440;
+    --exccdocs-h5-color:              #091440;
+    --exccdocs-h6-color:              #596D81;
+    /* Custom colors for table headers */
+    --exccdocs-table-bg-color:        #EDEFF1;
+    --exccdocs-table-fg-color:        #091440;
+}
+
+[data-md-color-scheme="exccdocs-dark"] {
+    /* Header bg color */
+    --md-primary-fg-color:           #000000;
+    /* Mobile nav menu bg color */
+    --md-primary-fg-color--dark:     #000000;
+    /* Background */
+    --md-default-bg-color:           #060b1e;
+    /* h1 & table header bg */
+    --md-default-fg-color--light:    #fefefe;
+    /* Edit icon (pencil) */
+    --md-default-fg-color--lighter:  #b7deee;
+    /* <hr> */
+    --md-default-fg-color--lightest: rgba(255,255,255,0.8);
+    /* Main body text & h2, h3, etc. */
+    --md-typeset-color:              rgba(255,255,255,0.8);
+    /* <a> */
+    --md-typeset-a-color:            #4A92FF;
+    /* <a> hover */
+    --md-accent-fg-color:            #66A9FF;
+    /* Footer */
+    --md-footer-fg-color:            #E9F8FE;
+    --md-footer-bg-color:            #152042;
+    /* Code */
+    --md-code-fg-color:              #99c1e3;
+    --md-code-bg-color:              #152042;
+    /* Code highlighting color shades */
+    --md-code-hl-color:                var(--md-code-fg-color);
+    --md-code-hl-number-color:         hsla(6, 74%, 63%, 1);
+    --md-code-hl-special-color:        hsla(340, 83%, 66%, 1);
+    --md-code-hl-function-color:       hsla(291, 57%, 65%, 1);
+    --md-code-hl-constant-color:       hsla(250, 62%, 70%, 1);
+    --md-code-hl-keyword-color:        hsla(219, 66%, 64%, 1);
+    --md-code-hl-string-color:         hsla(150, 58%, 44%, 1);
+    --md-code-hl-name-color:           var(--md-code-fg-color);
+    --md-code-hl-operator-color:       var(--md-default-fg-color--light);
+    --md-code-hl-punctuation-color:    var(--md-default-fg-color--light);
+    --md-code-hl-comment-color:        var(--md-default-fg-color--light);
+    --md-code-hl-generic-color:        var(--md-default-fg-color--light);
+    --md-code-hl-variable-color:       var(--md-default-fg-color--light);
+    /* Admonitions */
+    --md-admonition-fg-color:        #99c1e3;
+    --md-admonition-bg-color:        #223767;
+    /* Custom colors for headings */
+    --exccdocs-h1-color:              var(--md-typeset-color);
+    --exccdocs-h2-color:              var(--md-typeset-color);
+    --exccdocs-h3-color:              var(--md-typeset-color);
+    --exccdocs-h4-color:              var(--md-typeset-color);
+    --exccdocs-h5-color:              var(--md-typeset-color);
+    --exccdocs-h6-color:              var(--md-typeset-color);
+    /* Custom colors for table headers */
+    --exccdocs-table-bg-color:        #152042;
+    --exccdocs-table-fg-color:        #EDEFF1;
+}
+
+/* Hide images for light mode */
+[data-md-color-scheme="exccdocs-dark"] img[src$="#only-light"] {
+  display: none;
+}
+
+/* Show images for dark mode */
+[data-md-color-scheme="exccdocs-dark"] img[src$="#only-dark"] {
+  display: initial;
+}
+
+/* Highlight current page in nav menu */
+.md-nav__link--active {
+    font-weight: bold;
+}
+
+/* Increase size of social media links in page footer */
+.md-footer-social {
+    font-size: 20px;
+}
+
+h2 img.excc-icon {
+    height: 26px;
+    width : 26px;
+    vertical-align: middle;
+}
+
+/* Disable min-width for headers in tables with at least 7 columns */
+.md-typeset table:not([class]) th:first-child:nth-last-child(n+7),
+.md-typeset table:not([class]) th:first-child:nth-last-child(n+7) ~ th {
+	min-width: 0;
+}
+
+/* Improve appearance of tables inside pymdownx.details panels.
+   Details panel will have an unnecessary horizontal scroller without this.
+   Used in exccd-and-exccwallet-cli-arguments.md  */
+details .md-typeset__scrollwrap {
+    margin: 0 !important;
+}
+details .md-typeset__table {
+    padding: 1.6em 0 !important;
+}
+
+.md-typeset__table code{
+    white-space: nowrap;
+}
+
+.md-typeset table:not([class]) {
+    border: 0;
+    box-shadow: 0 0.2rem 0.5rem rgb(0 0 0 / 5%), 0 0 0.05rem rgb(0 0 0 / 10%);
+}
+.md-typeset table:not([class]) tr:first-child td {
+    border-top: 0;
+}
+.md-typeset table:not([class]) th{
+    background-color: var(--exccdocs-table-bg-color);
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--exccdocs-table-fg-color);
+}
+.md-typeset table:not([class]) td{
+    font-size: 13px;
+}
+
+.md-typeset .admonition p,
+.md-typeset .admonition li {
+    font-size: 14px;
+}
+
+.md-typeset blockquote p{
+    padding: 12px 0 12px;
+}
+
+.md-typeset code {
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.md-typeset pre>code {
+    border-radius: 3px;
+}
+
+.tabbed-set {
+    border-left: .2rem solid #536dfe;
+    box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,.05), 0 0 0.05rem rgba(0,0,0,.1);
+}
+
+/* .dcrm is shorthand for exccdocs maths.
+   It is shortened because it appears inline many times in some .md files. Used
+   for displaying mathematical values and formula.
+*/
+.dcrm {
+    font-family: math;
+    font-size: 17px !important;
+}
+
+.dcrm_block {
+    text-align: center;
+}
+
+.timeline-date {
+    font-family: "exccdocs-code", serif;
+    color: #596D81;
+    white-space: nowrap;
+    font-size: 14px !important;
+    padding: 14px !important;
+}
+
+.timeline-event {
+    font-size: 15px !important;
+    padding: 14px !important;
+    color: #596D81;
+}
