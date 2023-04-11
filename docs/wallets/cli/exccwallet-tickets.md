@@ -51,7 +51,7 @@ Once `exccwallet` is restarted with that line in `exccwallet.conf`, your wallet 
 ; ------------------------------------------------------------------------------
 
 ; The URL of the VSP.
-vsp.url=https://testnet-vspd.excc.co
+vsp.url=https://testnet-vsp.excc.co
 
 ; The base64 encoded public key of the VSP server.  This can be found on the
 ; VSP website in the footer.
