@@ -183,7 +183,6 @@ sub   rsa4096 2023-04-07 [E]
 If you have the ExchangeCoin project's release public keys on your GnuPG keyring, you
 can verify if the signature for the manifest was created by the ExchangeCoin release
 signing key.
-<!-- TODO Update with real data after proper release is done -->
 In a terminal, navigate to where you saved both the `manifest.txt` and the
 `manifest.txt.asc`. Then ask GnuPG to verify the signed manifest, like so:
 
@@ -191,26 +190,21 @@ In a terminal, navigate to where you saved both the `manifest.txt` and the
 $ gpg --verify <your manifest.txt.asc file>
 ```
 
-For example, if you wanted to verify `decred-v1.7.2-manifest.txt.asc`:
+For example, if you wanted to verify `exilibrium-v1.7.6-manifest.txt.asc`:
 
 ```no-highlight
-$ gpg --verify decred-v1.7.2-manifest.txt.asc
+$ gpg --verify exilibrium-v1.7.6-manifest.txt.asc
 ```
 
 Example output:
 
 ```no-highlight
-gpg: assuming signed data in 'decred-v1.7.2-manifest.txt'
-gpg: Signature made Wed 11 May 2022 11:41:05 AM EDT
-gpg:                using RSA key F516ADB7A069852C7C28A02D6D897EDF518A031D
-gpg: Good signature from "ExchangeCoin Release <release@decred.org>" [unknown]
-gpg: WARNING: This key is not certified with a trusted signature!
-gpg:          There is no indication that the signature belongs to the owner.
-Primary key fingerprint: FD13 B683 5E24 8FAF 4BD1  838D 6DF6 34AA 7608 AF04
-     Subkey fingerprint: F516 ADB7 A069 852C 7C28  A02D 6D89 7EDF 518A 031D
+gpg: Signature made Wed 19 Apr 2023 09:19:22 AM CEST
+gpg:                using RSA key 9DD10FAFB2A53E14BEF1B10D9AEB846958227764
+gpg: Good signature from "ExchangeCoin Team (The Official ExchangeCoin Team PGP Key) <support@excc.co>" [ultimate]
 ```
 
-If you see `Good signature from "ExchangeCoin Release <release@decred.org>"`, then
+If you see `Good signature from "ExchangeCoin Team (The Official ExchangeCoin Team PGP Key) <support@excc.co>`, then
 you're successful! You can trust that the `manifest.txt` came directly from the
 ExchangeCoin project.
 
@@ -253,7 +247,7 @@ There are many ways to generate a SHA-256 hash, but here are a few:
 Example output:
 
 ```no-highlight
-ab0c4d53576f4bd486c8c64451edc0b000a5eaae6e18e29e367f24522e11a7c6  decred-linux-amd64-v1.7.2.tar.gz
+7a65be7284486710d7f49f4c5f01381c876eac8686ce324efbe173b165e99bcb  exilibrium-linux-x86_64.AppImage
 ```
 
 If your output hash matches the hash from the manifest, you're done! The binary
